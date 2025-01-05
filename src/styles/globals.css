@@ -14,7 +14,6 @@
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  color: #ececf1;
 }
 
 ul {
@@ -31,7 +30,7 @@ button {
   height: 100vh;
   display: grid;
   grid-template-columns: 0fr 1fr;
-  background-color: #343541;
+  background-color: white;
 }
 
 .burger {
@@ -39,7 +38,6 @@ button {
   top: 50%;
   left: 0;
   transform: translate(-25%, -50%);
-  fill: #ececf1;
   cursor: pointer;
 }
 
@@ -51,8 +49,9 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(32, 33, 35, 1);
+  background-color: #005e60;
   overflow: auto;
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 
@@ -76,7 +75,7 @@ button {
 }
 
 .sidebar-header:hover {
-  background-color: #2b2c2f;
+  background-color: rgb(0,94,96);
 }
 
 .sidebar-history {
@@ -88,7 +87,7 @@ button {
 .sidebar-history p {
   position: sticky;
   top: 0;
-  background-color: rgb(32, 33, 35);
+  background-color: #94dcde;
   padding: 0.4rem;
   color: #8e8fa1;
   font-size: 0.8rem;
@@ -112,12 +111,7 @@ button {
   padding: 0 5px;
   left: calc(100% - 50px);
   border-radius: 0.3rem;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    #202123 100%,
-    rgba(0, 0, 0, 0)
-  );
+  background-color: rgb(0,94,96);
   pointer-events: none;
   z-index: 1;
 }
@@ -139,7 +133,7 @@ button {
 .sidebar li:hover,
 .sidebar-info-upgrade:hover,
 .sidebar-info-user:hover {
-  background-color: #343541;
+  background-color: #94dcde;
   border-radius: 0.3rem;
   cursor: pointer;
 }
@@ -177,7 +171,7 @@ button {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: rgb(68, 70, 85);
+  background-color: #005e60;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0.3rem;
@@ -185,10 +179,12 @@ button {
 
 .main-header li:nth-child(odd) {
   background-color: unset;
+  color: black;
 }
 
 .main-header li:nth-child(even) {
-  background-color: #444655;
+  color: #ffffff !important;
+  background-color: #005e60;
 }
 
 .main-header img:not(:nth-child(even)) {
@@ -247,7 +243,6 @@ button {
   border-radius: 0.3rem;
   display: flex;
   align-items: center;
-  background-color: #404150;
   box-shadow:
     rgb(0, 0, 0, 0.05) 0 3.3rem 3.4rem,
     rgb(0, 0, 0, 0.05) 0 -0.7rem 1.8rem,
@@ -261,7 +256,6 @@ button {
   height: 3rem;
   font-size: 1rem;
   padding-right: 1rem;
-  background-color: #404150;
   outline: none;
   border: none;
 }
